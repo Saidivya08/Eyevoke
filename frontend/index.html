@@ -1,0 +1,272 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Eyevoke</title>
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;600;700&display=swap" rel="stylesheet">
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@500;600;700;800&display=swap" rel="stylesheet">
+    
+</head>
+
+<body>
+
+    <header>
+        <div class="logo-container">
+            <img src="assets/eye.png" class="logo-img">
+            <span class="brand-name">EYEVOKE</span>
+        </div>
+
+        <nav>
+            <ul>
+                <li><a href="#home">Home</a></li>
+                <li><a href="#instructions">Instructions</a></li>
+                <li><a href="#settings">Settings</a></li>
+                <li><a href="#about">About Us</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <!-- Home / Hero Section -->
+    <main id="home" class="hero">
+        <div class="hero-content">
+            <h1>Experience the Future<br>of Communication</h1>
+            <p>Unlock a new dimension of interaction. Seamless, intuitive, and designed for you.</p>
+
+<div class="hero-images">
+
+    <div class="feature-item">
+        <div class="img-card">
+            <img src="assets/detect.jpeg" alt="Blink-Based Control">
+        </div>
+        <div class="feature-title">Blink-Based Control</div>
+    </div>
+
+    <div class="feature-item">
+        <div class="img-card">
+            <img src="assets/analyse.jpeg" alt="Analyse Blink">
+        </div>
+        <div class="feature-title">Analyse Blink</div>
+    </div>
+
+    <div class="feature-item">
+        <div class="img-card">
+            <img src="assets/communication.jpeg" alt="Instant Speech Output">
+        </div>
+        <div class="feature-title">Instant Speech Output</div>
+    </div>
+
+</div>
+
+            <button class="cta-btn">
+                  Start Communication
+            </button>
+
+
+        </div>
+    </main>
+
+    <!-- Instructions Section -->
+    <section id="instructions" class="section-content">
+        <h2 class="section-title">How to Use Eyevoke</h2>
+        <div class="text-content">
+            <div class="instructions-container">
+                <!-- Instruction 1 -->
+                <div class="instruction-row">
+                    <div class="instruction-text">
+                        <h3>1. Start Communication</h3>
+                        <p>Navigate to the 'Start Communication' section to begin your session. The interface is
+                            designed for immediate accessibility.</p>
+                    </div>
+                    <div class="instruction-visual">
+                        <img src="assets/ins 1.png" alt="Start Communication UI">
+                    </div>
+                </div>
+
+                <!-- Instruction 2 -->
+                <div class="instruction-row">
+                    <div class="instruction-text">
+                        <h3>2. Smart Auto-Scroll</h3>
+                        <p>Experience hands-free reading. The text scrolls automatically when you focus, adapting to
+                            your reading pace.</p>
+                    </div>
+                    <div class="instruction-visual">
+                        <img src="assets/ins 2.png" alt="Auto Scroll UI">
+                    </div>
+                </div>
+
+                <!-- Instruction 3 -->
+                <div class="instruction-row">
+                    <div class="instruction-text">
+                        <h3>3. Blink Selection</h3>
+                        <p>Perform a <em>long blink</em> to select text or trigger actions. Our advanced detection
+                            algorithm distinguishes natural blinks from commands.</p>
+                    </div>
+                    <div class="instruction-visual">
+                        <img src="assets/ins 3.png" alt="Blink Detection UI">
+                    </div>
+                </div>
+
+                <!-- Instruction 4 -->
+                <div class="instruction-row">
+                    <div class="instruction-text">
+                        <h3>4. Personalized Adjustments</h3>
+                        <p>Configure scroll speed and blink sensitivity in the Settings menu to match your comfort level
+                            perfectly.</p>
+                    </div>
+                    <div class="instruction-visual">
+                        <img src="assets/ins 4.jpeg" alt="Settings UI">
+                    </div>
+                </div>
+
+                <!-- Instruction 5 -->
+                <div class="instruction-row">
+                    <div class="instruction-text">
+                        <h3>5. Custom Sentences</h3>
+                        <p>Add your own custom sentences for quick access. Tailor the experience to your daily
+                            communication needs.</p>
+                    </div>
+                    <div class="instruction-visual">
+                        <img src="assets/ins 5.jpeg" alt="Custom Sentences UI">
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Settings Section -->
+    <section id="settings" class="section-content">
+        <h2 class="section-title">Settings</h2>
+
+        <div class="settings-group">
+            <h3>Theme Selection</h3>
+            <div class="radio-group">
+                <label>
+                    <input type="radio" name="theme" value="dark" checked> Dark Theme
+                </label>
+                <label>
+                    <input type="radio" name="theme" value="light"> Light Theme
+                </label>
+            </div>
+        </div>
+
+        <div class="settings-group">
+            <h3>Blink Mechanism</h3>
+            <div class="radio-group">
+                <label>
+                    <input type="radio" name="blink-mech" value="manual" checked> Manual
+                </label>
+                <label>
+                    <input type="radio" name="blink-mech" value="auto"> Auto-Scroll
+                </label>
+            </div>
+
+            <div id="scroll-speed-container" style="display: none; margin-top: 1rem;">
+    <label style="display: block; margin-bottom: 0.5rem; color: var(--text-secondary);">
+        Scroll Speed:
+        <span id="speed-value">5</span>
+    </label>
+
+    <input type="range" id="scroll-speed" min="1" max="100" value="5">
+</div>
+        </div>
+    </section>
+
+    <!-- About Section -->
+ <section id="about" class="section-content">
+    <h2 class="section-title">About Eyevoke</h2>
+
+    <div class="text-content" style="max-width:820px; line-height:1.8;">
+
+        <p style="font-weight:600; font-size:1.05rem;">
+            Eyevoke is a blink-based communication interface designed to assist
+            individuals with limited motor or speech abilities.
+        </p>
+
+        <p>
+            By converting intentional eye blinks into meaningful selections,
+            Eyevoke enables hands-free communication without relying on speech,
+            touch, or external hardware.
+        </p>
+
+        <hr style="margin:2rem 0; border:none; border-top:1px solid var(--glass-border);">
+
+        <h3 style="margin-bottom:0.5rem;">Who is Eyevoke for?</h3>
+        <p>
+            Eyevoke is built for people with motor disabilities, temporary injuries,
+            neurological conditions, or anyone who benefits from alternative
+            communication methods.
+        </p>
+
+        <hr style="margin:2rem 0; border:none; border-top:1px solid var(--glass-border);">
+
+        <h3 style="margin-bottom:0.5rem;">Why Eyevoke?</h3>
+        <ul style="padding-left:1.2rem; color:var(--text-secondary);">
+            <li>No external hardware required</li>
+            <li>Privacy-focused, on-device interaction</li>
+            <li>Customizable blink and scroll settings</li>
+            <li>Designed with accessibility-first principles</li>
+        </ul>
+
+        <p style="margin-top:1.5rem; font-style:italic;">
+            From a blink to a message — from silence to connection.
+        </p>
+
+        <p style="margin-top:0.3rem; font-weight:600;">
+            Eyevoke: The language of the eyes, made real.
+        </p>
+
+    </div>
+</section>
+
+
+    <!-- Communication Interface -->
+    <section id="communication" class="section-content">
+        <h2 class="section-title">Communication Interface</h2>
+        <div class="comm-layout">
+           <div class="cam-container">
+    <div class="logo-placeholder" style="width: 60px; height: 60px; margin-bottom: 1rem;"></div>
+
+    <div id="status-text" class="status idle">Status: Idle</div>
+
+    <!-- CAMERA FEED -->
+    <img
+        id="cameraFeed"
+        alt="Webcam Feed"
+        style="width:100%; border-radius:12px; margin:1rem 0; display:none;"
+    />
+
+    <button class="stop-btn" id="stop-btn">Stop Communication</button>
+</div>
+
+
+            <div class="text-interface">
+                <div class="sentence-display" id="sentence-list">
+                    <div class="sentence-item">Eyevoke demo text...</div>
+                    
+                </div>
+
+                <div class="input-area">
+                    <input type="text" id="sentence-input" placeholder="Type your sentence here...">
+
+                    <div class="input-actions">
+                        <button class="update-btn" id="add-btn">Add / Update</button>
+                        <button class="delete-btn" id="delete-btn">Delete</button>
+                    </div>
+                </div>
+
+
+            </div>
+        </div>
+    </section>
+
+    <script src="script.js"></script>
+</body>
+
+</html>
